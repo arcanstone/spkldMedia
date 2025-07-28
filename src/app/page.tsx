@@ -29,37 +29,50 @@ const MOCK_VIDEOS: Video[] = [
   },
 ];
 
+const maintenanceMode = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true';
+
 export default function Home() {
-  
 
-  const featured = MOCK_VIDEOS.find((v) => v.featured) ?? MOCK_VIDEOS[0];
-  const others = MOCK_VIDEOS.filter((v) => v.id !== featured.id);
+  if(maintenanceMode){
+    return (
+      <main className="flex min-h-screen flex-col items-center justify-center">
+        <h1 className="text-2xl font-bold">Site Under Maintenance</h1>
+        <p className="mt-4">We'll be back soon!</p>
+      </main>
+    );
+  }
+  else{
+    
 
-  return (
-    <main className="flex min-h-screen flex-col">
-      {/* NAVBAR */}
-      <Navbar />
+    const featured = MOCK_VIDEOS.find((v) => v.featured) ?? MOCK_VIDEOS[0];
+    const others = MOCK_VIDEOS.filter((v) => v.id !== featured.id);
 
-
-      {/* HERO */}
-      <Hero />
-
-
-      {/* FEATURED VIDEO */}
-      <FeaturedVideo video={featured} />
-
-
-      {/* PORTFOLIO */}
-      <Portfolio others={others} />
+    return (
+      <main className="flex min-h-screen flex-col">
+        {/* NAVBAR */}
+        <Navbar />
 
 
-      {/* CONTACT */}
-      <ContactForm />
-      
+        {/* HERO */}
+        <Hero />
 
-      {/* FOOTER */}
-      <Footer />
 
-    </main>
-  );
+        {/* FEATURED VIDEO */}
+        <FeaturedVideo video={featured} />
+
+
+        {/* PORTFOLIO */}
+        <Portfolio videos={others} />
+
+
+        {/* CONTACT */}
+        <ContactForm />
+        
+
+        {/* FOOTER */}
+        <Footer />
+
+      </main>
+    );
+  }
 }
