@@ -8,7 +8,7 @@ A sleek, professional real estate video site built for **SpkldMedia**, a media p
 
 ## 🔍 Preview
 
-🌐 [Live Preview (Dev)](https://spkld-media-git-main-arcanstones-projects.vercel.app/)
+🌐 [Live Preview (Dev)](https://spkld-media.vercel.app/)
 
 🏠 [Official Site](https://www.spkldmedia.com/)
 
