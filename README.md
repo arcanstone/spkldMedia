@@ -1,31 +1,29 @@
-# 🏡 SpkldMedia Real Estate Video Site
+# 🏡 SpkldMedia – Real Estate Video Showcase
 
-A professional real estate video showcase site for **SpkldMedia**, a media production company specializing in high-quality real estate videography for agents and property listings.
+A sleek, professional real estate video site built for **SpkldMedia**, a media production company specializing in high-quality videography for agents and property listings.
 
-📸 Follow on Instagram: [@spkldmedia](https://www.instagram.com/spkldmedia/?hl=en)
+📸 Follow us on Instagram: [@spkldmedia](https://www.instagram.com/spkldmedia/?hl=en)
 
 ---
 
-## 🚀 Features
+## 🔍 Preview
 
-* 🎥 Seamless video integration for real estate listings
-* 🖼️ Gallery layout for featured and additional properties
-* ⚡ High performance using Next.js static and dynamic rendering
-* 📱 Mobile-first responsive design
-* 🧩 Clean component-based architecture for easy maintenance
+🌐 [Live Preview (Dev)](https://spkld-media-git-main-arcanstones-projects.vercel.app/)
+
+🏠 [Official Site](https://www.spkldmedia.com/)
 
 ---
 
 ## 🧠 Tech Stack
 
-* [Next.js](https://nextjs.org/) – React framework for production
-* [TypeScript](https://www.typescriptlang.org/) – Type safety and code reliability
-* [Tailwind CSS](https://tailwindcss.com/) – Modern utility-first styling (if used)
-* [Vercel](https://vercel.com/) – Recommended hosting & deployment platform
+- [Next.js](https://nextjs.org/) – React framework for production-grade apps  
+- [TypeScript](https://www.typescriptlang.org/) – Strongly typed language for better reliability  
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first styling for rapid UI development  
+- [Vercel](https://vercel.com/) – Fast, zero-config deployment and hosting  
 
 ---
 
-## 📦 Getting Started
+## ⚙️ Getting Started
 
 ### 1. Clone the Repository
 
@@ -46,52 +44,31 @@ npm install
 npm run dev
 ```
 
-Visit `http://localhost:3000` to view the app.
+Visit `http://localhost:3000` in your browser to see the site in action.
 
 ---
 
 ## 🗂️ Project Structure
 
 ```
-real-estate-video-site/
-├── components/      # Reusable React components (e.g., Hello.tsx, Bye.tsx)
-├── pages/           # Next.js routing pages
-├── public/          # Static assets (images, video thumbnails, etc.)
-├── styles/          # Global styles if applicable
+src/
+├── components/      # Reusable UI components
+├── app/             # Main application pages
 ├── types/           # Shared TypeScript types (e.g., Video)
 └── ...
 ```
 
 ---
 
-## 📄 Example Type Definition
+## 🚀 Deployment
 
-```ts
-// types/video.ts
-export type Video = {
-  id: string;
-  title: string;
-  url: string;
-};
-```
+This project is automatically deployed via Vercel upon pushing to the `main` branch.
 
 ---
 
-## 🚢 Deployment
+## 🤝 Contributing
 
-Deploy directly to Vercel:
+Contributions, feedback, and pull requests are welcome!  
+If you have ideas for features or enhancements, feel free to [open an issue](https://github.com/your-username/spkldMedia/issues) or contact me at:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
-
----
-
-## 🤝 Contributions
-
-Contributions, feedback, and pull requests are welcome. If you have ideas for features or enhancements, feel free to open an issue or fork the project.
-
----
-
-## 📜 License
-
-This project is licensed under the \[MIT License
-
+📬 **allanhenriques007@gmail.com**
