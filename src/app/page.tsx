@@ -1,35 +1,34 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import FeaturedVideo from '@/components/FeaturedVideo';
-import Hero from '@/components/Hero';
-import ContactForm from '@/components/ContactForm';
-import { Video } from '@/types/video';
-import Portfolio from '@/components/Portfolio';
-import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
+import FeaturedVideo from "@/components/FeaturedVideo";
+import Hero from "@/components/Hero";
+import ContactForm from "@/components/ContactForm";
+import { Video } from "@/types/video";
+import Portfolio from "@/components/Portfolio";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 
 const MOCK_VIDEOS: Video[] = [
   {
-    id: '1',
-    title: 'Luxury Condo Tour – Downtown Toronto    ',
-    src: 'https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', // <-- replace with your CDN url
+    id: "1",
+    title: "Luxury Condo Tour – Downtown Toronto    ",
+    src: "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", // <-- replace with your CDN url
     featured: true,
   },
   {
-    id: '2',
-    title: 'Modern Family Home – Mississauga',
-    src: 'https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+    id: "2",
+    title: "Modern Family Home – Mississauga",
+    src: "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
   },
   {
-    id: '3',
-    title: 'Penthouse Walkthrough – Yorkville',
-    src: 'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4',
+    id: "3",
+    title: "Penthouse Walkthrough – Yorkville",
+    src: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
   },
 ];
 
-const maintenanceMode = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true';
+const maintenanceMode = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true";
 
 export default function Home() {
 
@@ -37,7 +36,7 @@ export default function Home() {
     return (
       <main className="flex min-h-screen flex-col items-center justify-center">
         <h1 className="text-2xl font-bold">Site Under Maintenance</h1>
-        <p className="mt-4">We'll be back soon!</p>
+        <p className="mt-4">{"We'll be back soon!"}</p>
       </main>
     );
   }
