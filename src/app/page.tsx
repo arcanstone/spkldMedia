@@ -19,7 +19,7 @@ const MOCK_VIDEOS: Video[] = [
   {
     id: "2",
     title: "Modern Family Home – Mississauga",
-    src: "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    src: "https://iframe.mediadelivery.net/embed/473544/2daf328f-f11f-4460-8cc0-0bdf81ec8c78",
   },
   {
     id: "3",
