@@ -91,22 +91,24 @@ const HorizontalVideoScroll = ({ videos, title = "Delivering for Our Clients" }:
             ))}
           </div>
 
-          {/* Navigation Arrows - Goldman Sachs Style (Right Side) */}
-          <div className="absolute -right-16 top-1/2 transform -translate-y-1/2 hidden xl:flex flex-col space-y-3">
-            <button
-              onClick={() => scroll('left')}
-              className="w-12 h-12 rounded-full border border-gray-300 bg-white hover:bg-gray-50 text-gray-600 hover:text-black transition-all duration-200 flex items-center justify-center"
-              aria-label="Previous"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <button
-              onClick={() => scroll('right')}
-              className="w-12 h-12 rounded-full border border-gray-300 bg-white hover:bg-gray-50 text-gray-600 hover:text-black transition-all duration-200 flex items-center justify-center"
-              aria-label="Next"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
+          {/* Navigation Arrows - Goldman Sachs Style (Bottom Right) */}
+          <div className="flex justify-end mt-6">
+            <div className="flex space-x-3">
+              <button
+                onClick={() => scroll('left')}
+                className="w-12 h-12 rounded-full border border-gray-300 bg-white hover:bg-gray-50 text-gray-600 hover:text-black transition-all duration-200 flex items-center justify-center"
+                aria-label="Previous"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              <button
+                onClick={() => scroll('right')}
+                className="w-12 h-12 rounded-full border border-gray-300 bg-white hover:bg-gray-50 text-gray-600 hover:text-black transition-all duration-200 flex items-center justify-center"
+                aria-label="Next"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            </div>
           </div>
         </div>
 
