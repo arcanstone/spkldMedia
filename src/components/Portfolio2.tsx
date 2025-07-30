@@ -1,9 +1,24 @@
 import React, { useState } from 'react';
 
+// Define types
+interface VideoPlayerProps {
+  url: string;
+  title: string;
+}
+
+interface PortfolioItem {
+  id: number;
+  title: string;
+  description: string;
+  videoUrl: string;
+  thumbnail: string;
+  category: string;
+}
+
 // VideoPlayer component
-const VideoPlayer = ({ url, title }) => {
+const VideoPlayer: React.FC<VideoPlayerProps> = ({ url, title }) => {
   // Extract YouTube video ID from URL
-  const getYouTubeId = (url) => {
+  const getYouTubeId = (url: string): string | null => {
     const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
     const match = url.match(regExp);
     return (match && match[2].length === 11) ? match[2] : null;
@@ -30,7 +45,7 @@ const VideoPlayer = ({ url, title }) => {
 };
 
 // Sample portfolio data
-const portfolioItems = [
+const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
     title: 'Luxury Beachfront Property',
@@ -81,11 +96,11 @@ const portfolioItems = [
   },
 ];
 
-const categories = ['All', 'Luxury', 'Urban', 'Rural'];
+const categories = ['All', 'Luxury', 'Urban', 'Rural'] as const;
 
-const Portfolio2 = () => {
-  const [selectedCategory, setSelectedCategory] = useState('All');
-  const [selectedVideo, setSelectedVideo] = useState(null);
+const Portfolio2: React.FC = () => {
+  const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [selectedVideo, setSelectedVideo] = useState<number | null>(null);
 
   const filteredItems = selectedCategory === 'All' 
     ? portfolioItems 
