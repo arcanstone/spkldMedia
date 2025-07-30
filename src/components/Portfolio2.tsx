@@ -140,7 +140,7 @@ const Portfolio2: React.FC = () => {
             <div className="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg">
               <VideoPlayer
                 url={portfolioItems.find(item => item.id === selectedVideo)?.videoUrl || ''}
-                title={portfolioItems.find(item => item.id === selectedVideo)?.title}
+                title={portfolioItems.find(item => item.id === selectedVideo)?.title || 'Video'}
               />
             </div>
             <div className="max-w-4xl mx-auto mt-6 px-4">
