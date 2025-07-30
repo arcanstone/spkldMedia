@@ -11,7 +11,7 @@ const Navbar3 = () => {
   return (
     <nav className="bg-stone-100 shadow-md border-b border-stone-200 relative z-50" style={{fontFamily: 'Inter, system-ui, -apple-system, sans-serif'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-12">
+        <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
@@ -65,7 +65,7 @@ const Navbar3 = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden fixed top-12 left-0 right-0 bottom-0 bg-stone-100 z-40">
+        <div className="md:hidden fixed top-16 left-0 right-0 bottom-0 bg-stone-100 z-40">
           <div className="px-4 py-1">
             <a
               href="/portfolio"
