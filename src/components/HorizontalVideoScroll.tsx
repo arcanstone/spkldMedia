@@ -92,7 +92,7 @@ const HorizontalVideoScroll = ({ videos, title = "Featured Properties" }: Props)
                 
                 {/* Content Below Image */}
                 <div className="p-4 space-y-4">
-                  <h3 className="text-2xl font-medium text-black leading-tight" style={{
+                  <h3 className="text-2xl font-bold text-black leading-tight" style={{
                     fontFamily: 'var(--font-merriweather)'
                   }}>
                     {video.title}
