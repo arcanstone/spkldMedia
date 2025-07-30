@@ -14,7 +14,7 @@ const HorizontalVideoScroll = ({ videos, title = "Delivering for Our Clients" }:
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {
-      const scrollAmount = 400; // Width of one card plus gap
+      const scrollAmount = 608; // Width of one card plus gap (36rem + 2rem = 608px)
       const currentScroll = scrollContainerRef.current.scrollLeft;
       const targetScroll = direction === 'left' 
         ? currentScroll - scrollAmount 
@@ -39,7 +39,7 @@ const HorizontalVideoScroll = ({ videos, title = "Delivering for Our Clients" }:
 
   return (
     <section className="py-20 bg-white" style={{fontFamily: 'Inter, system-ui, -apple-system, sans-serif'}}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header - Goldman Sachs Style */}
         <div className="mb-16">
           <h2 className="text-4xl font-normal text-black mb-8">{title}</h2>
@@ -59,10 +59,10 @@ const HorizontalVideoScroll = ({ videos, title = "Delivering for Our Clients" }:
             {videos.map((video) => (
               <div 
                 key={video.id}
-                className="flex-none w-96 group cursor-pointer"
+                className="flex-none w-[36rem] group cursor-pointer"
               >
                 {/* Large Image */}
-                <div className="aspect-[4/3] w-full bg-black overflow-hidden mb-6">
+                <div className="aspect-[4/3] w-full bg-black overflow-hidden mb-8">
                   <video
                     preload="metadata"
                     className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -74,17 +74,17 @@ const HorizontalVideoScroll = ({ videos, title = "Delivering for Our Clients" }:
                 </div>
                 
                 {/* Content Below Image */}
-                <div className="space-y-4">
-                  <h3 className="text-lg font-medium text-black leading-tight">
+                <div className="space-y-6">
+                  <h3 className="text-2xl font-medium text-black leading-tight">
                     {video.title}
                   </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
+                  <p className="text-lg text-gray-600 leading-relaxed">
                     {getVideoDescription(video)}
                   </p>
                   
                   {/* Arrow Indicator */}
-                  <div className="pt-2">
-                    <ArrowRight className="w-4 h-4 text-black group-hover:translate-x-1 transition-transform duration-200" />
+                  <div className="pt-3">
+                    <ArrowRight className="w-6 h-6 text-black group-hover:translate-x-1 transition-transform duration-200" />
                   </div>
                 </div>
               </div>
