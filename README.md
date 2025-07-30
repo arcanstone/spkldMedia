@@ -1,3 +1,4 @@
+
 ## SpkldMedia – Real Estate Video Showcase
 
 A sleek, professional real estate video site built for **SpkldMedia**, a media production company specializing in high-quality videography for agents and property listings.
@@ -9,7 +10,7 @@ Follow SpkldMedia on Instagram: [@spkldmedia](https://www.instagram.com/spkldmed
 ### Preview
 
 - [Live Preview (Dev)](https://spkld-media.vercel.app/)
-- [Official Site](https://www.spkldmedia.com/)
+- [Official Site](https://www.spkldmedia.com
 
 ---
 
