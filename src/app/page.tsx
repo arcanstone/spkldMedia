@@ -7,6 +7,10 @@ import { Video } from "@/types/video";
 import Portfolio from "@/components/Portfolio";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Navbar2 from "@/components/Navbar2"; // New Navbar component
+import Navbar3 from "@/components/Navbar3"; // New Navbar component with mobile menu
+import Portfolio2 from "@/components/Portfolio2";
+import HorizontalVideoScroll from "@/components/HorizontalVideoScroll";
 
 
 const MOCK_VIDEOS: Video[] = [
@@ -25,6 +29,41 @@ const MOCK_VIDEOS: Video[] = [
     id: "3",
     title: "Penthouse Walkthrough – Yorkville",
     src: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+  },
+  {
+    id: "4",
+    title: "Waterfront Estate – Lake Simcoe",
+    src: "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+  },
+  {
+    id: "5",
+    title: "Executive Townhome – Oakville",
+    src: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+  },
+  {
+    id: "6",
+    title: "Historic Mansion – Forest Hill",
+    src: "https://iframe.mediadelivery.net/embed/473544/2daf328f-f11f-4460-8cc0-0bdf81ec8c78",
+  },
+  {
+    id: "7",
+    title: "Modern Loft – King West",
+    src: "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+  },
+  {
+    id: "8",
+    title: "Family Bungalow – North York",
+    src: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+  },
+  {
+    id: "9",
+    title: "Luxury Villa – Muskoka",
+    src: "https://iframe.mediadelivery.net/embed/473544/2daf328f-f11f-4460-8cc0-0bdf81ec8c78",
+  },
+  {
+    id: "10",
+    title: "Sky-High Penthouse – CN Tower Views",
+    src: "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
   },
 ];
 
@@ -49,12 +88,14 @@ export default function Home() {
     return (
       <main className="flex min-h-screen flex-col">
         {/* NAVBAR */}
-        <Navbar />
+        <Navbar3 />
 
 
         {/* HERO */}
         <Hero />
 
+        {/* HORIZONTAL VIDEO SCROLL */}
+        <HorizontalVideoScroll videos={others} title="Featured Properties" />
 
         {/* FEATURED VIDEO */}
         <FeaturedVideo video={featured} />
@@ -62,6 +103,9 @@ export default function Home() {
 
         {/* PORTFOLIO */}
         <Portfolio videos={others} />
+
+        {/* PORTFOLIO2 */}
+        <Portfolio2/>
 
 
         {/* CONTACT */}
