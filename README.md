@@ -1,8 +1,8 @@
 ## SpkldMedia – Real Estate Video Showcase
 
-A sleek, professional real estate video site built for **SpkldMedia**, a media production company specializing in high-quality videography for agents and property listings.
+A professional real estate video site built for **SpkldMedia**, a media production company specializing in videography for agents and property listings.
 
-Follow SpkldMedia on Instagram: [@spkldmedia](https://www.instagram.com/spkldmedia/?hl=en)
+SpkldMedia Instagram: [@spkldmedia](https://www.instagram.com/spkldmedia/?hl=en)
 
 ---
 
@@ -15,10 +15,10 @@ Follow SpkldMedia on Instagram: [@spkldmedia](https://www.instagram.com/spkldmed
 
 ### Tech Stack
 
-- [Next.js](https://nextjs.org/) – React framework for production-grade apps  
-- [TypeScript](https://www.typescriptlang.org/) – Strongly typed language 
-- [Tailwind CSS](https://tailwindcss.com/) – Rapid UI development  
-- [Vercel](https://vercel.com/) – Fast, zero-config deployment and hosting  
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vercel](https://vercel.com/)
 
 ---
 
@@ -43,7 +43,7 @@ npm install
 npm run dev
 ```
 
-Visit `http://localhost:3000` in your browser to see the site in action.
+Visit `http://localhost:3000` in your browser to see the site.
 
 ---
 
@@ -67,6 +67,6 @@ This project is automatically deployed via Vercel upon pushing to the `main` bra
 
 ### Contributing
 
-If you have ideas for features or enhancements, feel free to [open an issue](https://github.com/arcanstone/spkldMedia/issues) or contact me at:
+If you have ideas for features or enhancements, [open an issue](https://github.com/arcanstone/spkldMedia/issues) or contact me at:
 
 **allanhenriques007@gmail.com**
